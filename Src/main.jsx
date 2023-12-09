@@ -4,6 +4,7 @@ import Destaque from './Destaque.jsx';
 import Cadastrar from './Cadastrar.jsx';
 import Home from './Home.jsx';
 import {Routes,Route, BrowserRouter} from "react-router-dom";
+import "./Cadastrar.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
