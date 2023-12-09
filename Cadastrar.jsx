@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import "./ToListen.css"
+import "./Cadastrar.css"
 import { Link } from "react-router-dom";
 
-export default function ToListen() {
+export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [atividade, setAtividade] = useState("");
     const [lista, setLista] = useState(listaLocalStorage || []);

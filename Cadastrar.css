@@ -1,0 +1,19 @@
+body{
+    background-image: url(skz7.jpeg);
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    border-color: black;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(83, 78, 78, 0.438);
+    padding: 20px;
+}
+
+h1{
+    color: rgb(53, 48, 48);
+}
