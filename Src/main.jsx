@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Detalhe from './Detalhe/Detalhe';
-
+import Destaque from './Destaque.jsx';
+import Cadastrar from './Cadastrar.jsx';
+import Home from './Home.jsx';
 import {Routes,Route, BrowserRouter} from "react-router-dom";
-
-import ToListen from './To listen/ToListen.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
