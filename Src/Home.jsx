@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Menu from './Components/Menu';
 
 export default function Home(){
+    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
 
 return(
 <div className = "container">
@@ -12,6 +13,5 @@ return(
         <Card listaMV = {listaMV} />
     </div>
 </div>
-)
-
+);
 }

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
-    const [atividade, setAtividade] = useState("");
-    const [lista, setLista] = useState(listaLocalStorage || []);
+    const [l, setlistaMV] = useState("");
+    const [listaMV, setLista] = useState(listaLocalStorage || []);
     const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
     useEffect(() => {localStorage.setItem ("Lista", JSON.stringify(lista)) }, [lista]);
@@ -17,33 +17,18 @@ export default function Cadastrar() {
             id: id
         }]);
         setId(id + 1);
-        setAtividade("");
+        setlistaMV("");
     };
-
-    const remover = (id) => {
-        setLista(lista.filter((ativ) => ativ.id !== id));
-    }
 
     return(
         <div className = "container">
-            <h1>Lista de Musicas Ver. Kpop</h1>
+            <h1>KPOP - MV</h1>
             <form onSubmit = {salvar}>
                 <input type ="text"
-                    value = {atividade}
-                    onChange ={(e) => {setAtividade(e.target.value)}} />
+                    value = {listaMV}
+                    onChange ={(e) => {setlistaMV(e.target.value)}} />
                     <button>ADD</button>
             </form>
-            {lista.map((ativ) => 
-              <ul key = {ativ.id}>
-
-                <Link to ={ `/Detalhe/${ativ.id}`}>
-                    <p>{ativ.atividade}</p>
-                </Link>
-                <li>
-                    <button onClick={() => remover(ativ.id)}>REMOVE</button>
-                </li>
-            </ul>
-            )}
         </div>
     );
 }

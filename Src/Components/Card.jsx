@@ -1,6 +1,6 @@
-import "./Cadastrar.css"
+import "../Cadastrar.css"
 
-    function Card ({listaMV}){
+   export default function Card ({listaMV}){
     return(
      
         listaMV.map((video) =>

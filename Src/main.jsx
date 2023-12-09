@@ -1,7 +1,7 @@
-import {Routes,Route, BrowserRouter} from "react-router-dom";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import {Routes,Route, BrowserRouter} from "react-router-dom";
 import Destaque from './Destaque';
 import Cadastrar from './Cadastrar';
 import Home from './Home';
