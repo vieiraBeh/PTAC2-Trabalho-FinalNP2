@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import '../Cadastrar.css';
 
 export default function Destaque(){
-    
+    const listaLocalStorage = JSON.parse(localStorage.getItem('Lista')) || [];
 
 return (
     <div>
