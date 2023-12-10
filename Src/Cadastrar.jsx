@@ -44,27 +44,27 @@ export default function Cadastrar() {
 
             <h2>Grupo</h2>
                 <input type ="text"
-                    value = {atividade}
+                    value = {grupo}
                     onChange ={(e) => {setGrupo(e.target.value)}} />
 
             <h2>Titulo da Faixa</h2>
                 <input type ="text"
-                    value = {atividade}
+                    value = {tituloFaixa}
                     onChange ={(e) => {setTituloFaixa(e.target.value)}} />
 
             <h2>Duração da Faixa</h2>
                 <input type ="text"
-                    value = {atividade}
+                    value = {duração}
                     onChange ={(e) => {setDuração(e.target.value)}} />
 
             <h2>Hashtag</h2>
                 <input type ="text"
-                    value = {atividade}
+                    value = {hashtag}
                     onChange ={(e) => {setHashtag(e.target.value)}} />
 
              <h2>Album da Faixa</h2>
                 <input type ="text"
-                    value = {atividade}
+                    value = {album}
                     onChange ={(e) => {setAlbum(e.target.value)}} />
                     <br/>
                     <br/>
