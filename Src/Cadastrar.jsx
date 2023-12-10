@@ -6,6 +6,11 @@ import '../Cadastrar.css';
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [atividade, setAtividade] = useState("");
+    const [grupo, setGrupo] = useState("");
+    const [tituloFaixa, setTituloFaixa] = useState("");
+    const [duração, setDuração] = useState("");
+    const [hashtag, setHashtag] = useState("");
+    const [album, setAlbum] = useState("");
     const [listaMV, setListaMV] = useState(listaLocalStorage);
     const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
