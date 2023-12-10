@@ -20,6 +20,11 @@ export default function Cadastrar() {
         e.preventDefault();
         setListaMV([...listaMV,{
             atividade: atividade,
+            grupo: grupo,
+            tituloFaixa: tituloFaixa,
+            duração: duração,
+            hashtag: hashtag,
+            album: album,
             id: id
         }]);
         setId(id + 1);
@@ -31,10 +36,39 @@ export default function Cadastrar() {
             <Navbar nomeSite={"KPOP-MV"} />
             <div className="container">
             <form onSubmit = {salvar}>
+                <h1>Insira dados abaixo:</h1>
+                <h2>Link</h2>
                 <input type ="text"
                     value = {atividade}
                     onChange ={(e) => {setAtividade(e.target.value)}} />
-                    <button>ADD</button>
+
+            <h2>Grupo</h2>
+                <input type ="text"
+                    value = {atividade}
+                    onChange ={(e) => {setGrupo(e.target.value)}} />
+
+            <h2>Titulo da Faixa</h2>
+                <input type ="text"
+                    value = {atividade}
+                    onChange ={(e) => {setTituloFaixa(e.target.value)}} />
+
+            <h2>Duração da Faixa</h2>
+                <input type ="text"
+                    value = {atividade}
+                    onChange ={(e) => {setDuração(e.target.value)}} />
+
+            <h2>Hashtag</h2>
+                <input type ="text"
+                    value = {atividade}
+                    onChange ={(e) => {setHashtag(e.target.value)}} />
+
+             <h2>Album da Faixa</h2>
+                <input type ="text"
+                    value = {atividade}
+                    onChange ={(e) => {setAlbum(e.target.value)}} />
+                    <br/>
+                    <br/>
+                    <button>Cadastrar</button>
             </form>
             </div>
         </div>
