@@ -3,14 +3,14 @@ import Card from './Components/Card';
 import Navbar from './Components/Navbar';
 import '../Cadastrar.css';
 
-export default function Destaque(){
-    const listaLocalStorage = JSON.parse(localStorage.getItem('Lista')) || [];
+export default function Home() {
+  const listaLocalStorage = JSON.parse(localStorage.getItem('Lista')) || [];
 
-return (
+  return (
     <div>
       <Navbar nomeSite={'KPOP-MV'} />
       <div className='card-container'>
-        <Card listaMV={listaLocalStorage} />
+        <Card listaMV={listaLocalStorage.slice(-4)} />
       </div>
     </div>
   );
