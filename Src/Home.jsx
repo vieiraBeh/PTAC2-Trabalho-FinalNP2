@@ -1,17 +1,18 @@
+// Home.jsx
+import React from 'react';
 import Card from './Components/Card';
 import Navbar from './Components/Navbar';
-import Menu from './Components/Menu';
+import '../Cadastrar.css';
 
-export default function Home(){
-    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
+export default function Home() {
+  const listaLocalStorage = JSON.parse(localStorage.getItem('Lista')) || [];
 
-return(
-<div className = "container">
-    <Menu/>
-    <Navbar nomeSite = {"KPOP-MVS"} />
-    <div className='card-container'>
-        <Card listaMV = {listaMV} />
+  return (
+    <div>
+      <Navbar nomeSite={'KPOP-MV'} />
+      <div className='card-container'>
+        <Card listaMV={listaLocalStorage} />
+      </div>
     </div>
-</div>
-);
+  );
 }

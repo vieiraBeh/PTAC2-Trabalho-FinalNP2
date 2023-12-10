@@ -1,4 +1,4 @@
-import "../Cadastrar.css"
+import "../Styles/Card.css"
 
    export default function Card ({listaMV}){
     return(

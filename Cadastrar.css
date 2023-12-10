@@ -1,19 +1,21 @@
 body{
-    background-image: url(skz7.jpeg);
+    background-image: url(bp3.jpeg);
     background-position: relative;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
     text-align: center;
-    border-color: black;
 }
 
-.container {
+.container{
     max-width: 500px;
     margin: 0 auto;
-    background-color: rgba(83, 78, 78, 0.438);
+    background-color: rgba(152, 138, 138, 0.438);
     padding: 20px;
 }
 
 h1{
     color: rgb(53, 48, 48);
 }
+

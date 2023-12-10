@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Cadastrar.css"
-import { Link } from "react-router-dom";
+import '../Cadastrar.css';
 
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
@@ -20,15 +19,17 @@ export default function Cadastrar() {
         setAtividade("");
     };
 
-    return(
-        <div className = "container">
-            <h1>KPOP - MVS</h1>
+    return( 
+        <div>
+            <Navbar nomeSite={"KPOP-MV"} />
+            <div className="container">
             <form onSubmit = {salvar}>
                 <input type ="text"
                     value = {atividade}
                     onChange ={(e) => {setAtividade(e.target.value)}} />
                     <button>ADD</button>
             </form>
+            </div>
         </div>
     );
 }
