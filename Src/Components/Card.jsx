@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../Styles/Card.css"
 
    export default function Card ({listaMV}){
@@ -18,6 +19,7 @@ import "../Styles/Card.css"
         
         <h3>{ video.tituloFaixa }</h3>
         <p>{ video.grupo }</p>
+        <Link to = {`/Detalhe/${video.id}`}><button>Ver mais</button></Link>
       </div>
         )
     );
