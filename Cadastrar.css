@@ -11,7 +11,7 @@ body{
 .container{
     max-width: 500px;
     margin: 0 auto;
-    background-color: rgba(152, 138, 138, 0.438);
+    background-color:pink;
     padding: 20px;
 }
 

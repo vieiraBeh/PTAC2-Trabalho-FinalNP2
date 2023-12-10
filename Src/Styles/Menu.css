@@ -1,17 +1,17 @@
 .Menu {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
-    padding: 10px;
+    background-color: rgb(171, 103, 139);;
+    padding: 20px;
   }
   
   .Menu a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 50px;
   }
   
   .Menu a:hover {
-    color: #ddd;
+    color: black;
   }

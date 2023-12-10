@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: pink;
-  color: #ffffff;
+  background-color: rgb(171, 103, 139);
   padding: 10px 20px;
 }
 
 .Navbar h1 {
   margin: 0;
-  font-size: 1.5rem;
-  color: #ffffff;
+  font-size: 1.7rem;
+  color: black;
   font-weight: bold;
 }

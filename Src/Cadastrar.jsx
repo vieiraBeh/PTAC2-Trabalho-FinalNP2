@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import React from 'react';
+import Navbar from './Components/Navbar';
 import '../Cadastrar.css';
 
 export default function Cadastrar() {
@@ -32,4 +34,5 @@ export default function Cadastrar() {
             </div>
         </div>
     );
+
 }
