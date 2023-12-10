@@ -33,7 +33,7 @@ export default function Cadastrar() {
 
     return( 
         <div>
-            <Navbar nomeSite={"KPOP-MV"} />
+            <Navbar nomeSite={"KPOP-MV"} /><br/>
             <div className="container">
             <form onSubmit = {salvar}>
                 <h1>Insira dados abaixo:</h1>
@@ -71,6 +71,7 @@ export default function Cadastrar() {
                     <button>Cadastrar</button>
             </form>
             </div>
+            <br/>
         </div>
     );
 

@@ -19,6 +19,7 @@ import "../Styles/Card.css"
         
         <h3>{ video.tituloFaixa }</h3>
         <p>{ video.grupo }</p>
+        <br/>
         <Link to = {`/Detalhe/${video.id}`}><button>Ver mais</button></Link>
       </div>
         )

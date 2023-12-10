@@ -1,18 +1,18 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ajuste conforme necessário */
+    justify-content: space-around; 
   }
   
   .card {
-    width: 30%; /* Ajuste conforme necessário */
+    width: 30%;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid  rgb(156, 93, 127);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
+    background-color:  rgba(156, 93, 127, 0.667);
+    text-align: center black;
     box-sizing: border-box;
   }
   
@@ -28,6 +28,8 @@
   }
   
   .card p {
-    color: #666;
+    color: black;
     margin: 0;
   }
+
+

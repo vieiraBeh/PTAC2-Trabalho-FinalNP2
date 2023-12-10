@@ -20,6 +20,7 @@ export default function Detalhe(){
           <Card listaMV={listaMV} />
           <h3>{ video.duração }</h3>
           <h3>{ video.album }</h3>
+          <h3>{ video.hashtag }</h3>
 
         </div>
       </div>
